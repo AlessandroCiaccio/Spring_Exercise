@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/v1")
 public class HelloPlace {
-    @GetMapping(path= "/helloPlace")
-    public String helloPlace(@RequestParam String name, @RequestParam String place){
-        return "Hello "+name+", how is the weather in "+ place +"?";
+    @GetMapping(path= "/ciao")
+    public String ciao(@RequestParam String nome, @RequestParam String provincia){
+        return "Ciao "+nome+", com'è il tempo in "+ provincia +"?";
 
     }
 
